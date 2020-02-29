@@ -72,7 +72,7 @@ public class Task2 {
      * Дано натуральное число N <= 10000. Выведите следующее после N четное число. Например: N = 8, Result = 10
      */
     int nextEvenNumber(int n) {
-        return n + (n & 1) + ((n + 1) % 2) * 2;
+        return n + (n & 1) + ((n + 1) & 1) * 2;
     }
 
     /**
